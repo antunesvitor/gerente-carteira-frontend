@@ -1,19 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { NgApexchartsModule } from "ng-apexcharts";
-
 import { AppComponent } from './app.component';
-import { GraficoPatrimonioComponent } from './grafico-patrimonio/grafico-patrimonio.component';
+import { PatrimonioModule } from './patrimonio/patrimonio.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    GraficoPatrimonioComponent 
+    AppComponent, 
   ],
   imports: [
     BrowserModule,
-    NgApexchartsModule
+    PatrimonioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
