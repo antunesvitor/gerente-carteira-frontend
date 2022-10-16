@@ -1,0 +1,10 @@
+.box {
+    background-color: #1d2021;
+    border: #EEE0b7 solid 1px;
+    border-radius: 25px;
+    width: 30%
+}
+
+.box > .title {
+    color: #fff;
+}
