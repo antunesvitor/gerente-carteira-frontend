@@ -9,7 +9,7 @@ import { PatrimonioComponent } from "./patrimonio.component";
     imports: [
         CommonModule,
         NgApexchartsModule,
-        BrowserModule
+        BrowserModule,
     ],
     declarations: [
         PatrimonioComponent,

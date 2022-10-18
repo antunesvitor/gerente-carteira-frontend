@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { PatrimonioModule } from './patrimonio/patrimonio.module';
@@ -10,6 +11,7 @@ import { PatrimonioModule } from './patrimonio/patrimonio.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     PatrimonioModule
   ],
   providers: [],
