@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Consolidado } from './models/consolidado.model';
 import { Posicao } from './models/posicao.model';
 
 @Injectable({
@@ -14,5 +15,9 @@ export class PatrimonioService {
   getPosicaoAcionaria() {
 
     return this.http.get<Posicao[]>(this.url + '/posicoes');
+  }
+
+  getConsolidadoValores(){
+    return this.http.get<Consolidado>(this.url + '/consolidado')
   }
 }

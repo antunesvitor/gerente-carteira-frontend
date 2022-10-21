@@ -2,6 +2,8 @@
 body {
     background-color: #282828;      
     color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 .flex {
@@ -14,4 +16,8 @@ body {
 
 flex-dc {
     flex-direction: column;
+}
+
+.flex-wp {
+    flex-wrap: wrap;
 }

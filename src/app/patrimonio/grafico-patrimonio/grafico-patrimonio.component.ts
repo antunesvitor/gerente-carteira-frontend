@@ -14,7 +14,7 @@ export type ChartOptions = {
 @Component({
     selector: 'grafico-patrimonio',
     templateUrl: './grafico-patrimonio.component.html',
-    styleUrls: ['./grafico-patrimonio.component.css'],
+    styleUrls: ['../patrimonio.component.css'],
 })
 export class GraficoPatrimonioComponent implements OnInit {
     
