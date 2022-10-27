@@ -23,18 +23,16 @@ export class GraficoPatrimonioComponent implements OnInit {
     @ViewChild("chart") chart: ChartComponent
     @Input() series: number[] = [];
     @Input() labels: string[] = [];
+    @Input() title: string = '<title>';
+    @Input("chart-width") chartWidth: string = "580";
 
     constructor() { }
 
     ngOnInit(): void {
-        console.log('OnInit series: ', this.series);
-        console.log('OnInit labels: ', this.labels);
         this.iniciarGrafico();
     }
 
     ngOnChanges(changes: SimpleChanges): void {
-        console.log('OnChanges series: ', this.series);
-        console.log('OnChanges labels: ', this.labels);
         this.iniciarGrafico();
     }
 
@@ -42,7 +40,7 @@ export class GraficoPatrimonioComponent implements OnInit {
         this.chartOptions = {
             series: this.series,
             chart: {
-                width: 580,
+                width: this.chartWidth,
                 type: "pie"
             },
             labels: this.labels,

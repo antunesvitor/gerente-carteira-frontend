@@ -1,13 +1,19 @@
+.container > div {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 45%;
+    max-width: 100%;
+}
+
 .box {
     background-color: #1d2021;
     border: #EEE0b7 solid 1px;
     border-radius: 25px;
     min-width: 40%;
     max-width: 100%;
-    margin: 1%;
+    margin: 15px;
     padding: 1%;
     color: #EEE0b7;
-    display: inline-block;
 }
     .box.consolidado {
         /* margin: 2px; */
@@ -33,5 +39,8 @@
             font-size: 28px;
             margin: 0 0;
         }
+    .box > grafico-patrimonio{ 
+        display: inline-block;
+    }
 
 
