@@ -21,3 +21,7 @@ flex-dc {
 .flex-wp {
     flex-wrap: wrap;
 }
+
+.flex-sp {
+    justify-content: space-between;
+}

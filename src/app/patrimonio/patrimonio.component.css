@@ -2,24 +2,26 @@
     background-color: #1d2021;
     border: #EEE0b7 solid 1px;
     border-radius: 25px;
-    min-width: 50%;
+    min-width: 40%;
     max-width: 100%;
     margin: 1%;
     padding: 1%;
     color: #EEE0b7;
+    display: inline-block;
 }
     .box.consolidado {
-        margin: 2px;
+        /* margin: 2px; */
         font-size: 14px;
+        vertical-align: top;
     }
         .box.consolidado > div{
-            flex: 1 1 200px;
-            max-width: 50%;   
+            /* display: inline-block; */
+            max-width: 50%;
         }
 
         .box.consolidado > .valor-total {
             min-width: 100%;
-            height: 50px;
+            /* height: 50px; */
         }
 
         .box.consolidado > .valor-total > h2 {
@@ -31,6 +33,5 @@
             font-size: 28px;
             margin: 0 0;
         }
-    
 
-    
+

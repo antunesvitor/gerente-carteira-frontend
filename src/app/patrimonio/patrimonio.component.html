@@ -1,17 +1,24 @@
-<div class="container flex">
-    <grafico-patrimonio [series]="series" [labels]="labels"></grafico-patrimonio>
-    <div class="box consolidado flex flex-wp">
+<div class="container">
+    <div class="box">
+        <grafico-patrimonio [series]="series" [labels]="labels"></grafico-patrimonio>
+    </div>
+    <div class="box consolidado">
         <div class="valor-total">
             <span>valor da carteira:</span>
             <h2>{{consolidado.valorTotal}}</h2>
         </div>
-        <div>
-            <span>lucro R$:</span>
-            <h3>{{consolidado.lucroValor}}</h3>
+        <div class="flex flex-dc flex-sp">
+            <div>
+                <span>lucro R$:</span>
+                <h3>{{consolidado.lucroValor}}</h3>
+            </div>
+            <div>
+                <span>lucro:</span>
+                <h3>{{consolidado.lucroPerc}}%</h3>
+            </div>
         </div>
-        <div>
-            <span>lucro %:</span>
-            <h3>{{consolidado.lucroPerc}}</h3>
-        </div>
+    </div>
+    <div>
+        <!-- COLOCAR AQUI GRÁFICOS DE TIPO DE INVESTIMENTO (AÇÃO, FII, CRIPTO), TIPO DE AÇÃO (DIVIDENDO, CRESCIMENTO), TIPO DE FII(LAJES, SHOPPINGS, LOGISTICA) -->
     </div>
 </div>
